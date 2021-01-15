@@ -2,6 +2,8 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { getSortedPostsData } from "../lib/posts";
 import Container from "../components/Container";
+import Skill from "../components/Skill";
+import Portfolio from "../components/Portfolio";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -14,14 +16,14 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   const motionH1 = {
     hidden: {
-      x: -200,
+      x: -100,
       opacity: 0,
     },
     visible: {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 1.3,
         delay: 1,
       },
     },
@@ -35,8 +37,8 @@ export default function Home({ allPostsData }) {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.7,
-        delay: 2,
+        duration: 1,
+        delay: 2.3,
       },
     },
   };
@@ -48,7 +50,7 @@ export default function Home({ allPostsData }) {
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto">
         <section className="h-90vh flex items-center justify-center flex-col">
           <motion.h1
-            className="font-bold text-3xl md:text-5xl mb-4 tracking-tight text-black dark:text-white text-center align-middle"
+            className="font-bold text-3xl md:text-6xl mb-4 tracking-tight text-black dark:text-white text-center align-middle"
             variants={motionH1}
             initial="hidden"
             animate="visible"
@@ -60,10 +62,13 @@ export default function Home({ allPostsData }) {
             variants={motionButton}
             initial="hidden"
             animate="visible"
+            href="#skill"
           >
-            More About Me
+            <a href="#skill">More About Me</a>
           </motion.button>
         </section>
+        <Skill />
+        <Portfolio />
       </div>
     </Container>
   );

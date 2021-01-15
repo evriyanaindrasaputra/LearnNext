@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Footer from "./Footer";
 
 export default function Container({ children }) {
   const [mounted, setMounted] = useState(false);
@@ -13,7 +14,7 @@ export default function Container({ children }) {
     },
     visible: {
       y: 0,
-      opacity: 0.6,
+      opacity: 1,
       transition: {
         duration: 1,
       },
@@ -24,7 +25,7 @@ export default function Container({ children }) {
   return (
     <div className="bg-white dark:bg-black">
       <motion.nav
-        className="flex justify-between items-center bg-white dark:bg-black max-w-4xl w-full p-4 h-10vh mx-auto my-0  bg-opacity-60 sticky-nav"
+        className="flex justify-between items-center bg-white dark:bg-black max-w-4xl w-full p-4 h-10vh mx-auto my-0 sticky-nav"
         variants={variantNav}
         initial="hidden"
         animate="visible"
@@ -76,6 +77,7 @@ export default function Container({ children }) {
       <main className="flex flex-col justify-center bg-white dark:bg-black px-8">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
