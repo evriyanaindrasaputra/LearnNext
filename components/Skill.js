@@ -1,10 +1,13 @@
 export default function Skill() {
   return (
-    <section className="h-screen flex flex-col justify-center" id="skill">
-      <h2 className="font-bold text-lg md:text-2xl tracking-tighter text-black dark:text-white text-center">
+    <section
+      className="h-90vh md:h-screen flex flex-col justify-center"
+      id="skill"
+    >
+      <h2 className="font-bold text-xl md:text-2xl tracking-tighter text-black dark:text-white text-center my-2 md:my-0">
         My Skills
       </h2>
-      <p className="font-normal text-base text-gray-400 dark:text-gray-100 mb-5 md:mb-44 text-center">
+      <p className="font-normal text-base text-gray-400 dark:text-gray-100 mb-7 md:mb-44 text-center">
         Some of skills that i have learned and still continuing to learn more
         deeply.
       </p>

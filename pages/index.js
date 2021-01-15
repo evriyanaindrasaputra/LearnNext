@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { getSortedPostsData } from "../lib/posts";
 import Container from "../components/Container";
 import Skill from "../components/Skill";
-import Portfolio from "../components/Portfolio";
+import Portfolios from "../components/Portfolios";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -58,7 +58,7 @@ export default function Home({ allPostsData }) {
             Hey, I'm Evriyana Indra Saputra
           </motion.h1>
           <motion.button
-            className="p-2 md:p-4 font-semibold bg-black dark:bg-gray-500 text-gray-200 dark:text-black rounded-lg my-4"
+            className="p-2 md:p-4 font-semibold bg-black dark:bg-gray-800 text-white dark:text-white rounded-lg my-4"
             variants={motionButton}
             initial="hidden"
             animate="visible"
@@ -68,7 +68,7 @@ export default function Home({ allPostsData }) {
           </motion.button>
         </section>
         <Skill />
-        <Portfolio />
+        <Portfolios />
       </div>
     </Container>
   );
