@@ -10,7 +10,6 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 .sticky-nav {
   position: sticky;

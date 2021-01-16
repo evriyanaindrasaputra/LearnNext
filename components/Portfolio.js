@@ -6,7 +6,7 @@ export default function Portfolio({ src, alt, title, subtitle, target }) {
     <motion.div
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="flex flex-col w-full mx-2 p-5 bg-white dark:bg-gray-800 text-black dark:text-white shadow-md rounded-md"
+      className="flex flex-col w-full mx-2 p-5 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md"
     >
       <Link href={target}>
         <a>
