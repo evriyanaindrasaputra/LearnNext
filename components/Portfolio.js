@@ -10,7 +10,14 @@ export default function Portfolio({ src, alt, title, subtitle, target }) {
     >
       <Link href={target}>
         <a>
-          <Image src={src} alt={alt} width={400} height={200} />
+          <Image
+            src={src}
+            alt={alt}
+            width={400}
+            height={200}
+            loading="lazy"
+            layout="responsive"
+          />
         </a>
       </Link>
       <div className="mt-3">
