@@ -1,12 +1,23 @@
 ---
 title: "Expenses Tracking"
 subtitle: "Trackiing your activity income or outcome with reactjs and styled components"
-date: "2020-01-12"
+date: "2020-01-18"
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+#Expenses Tracking
+Expenses tracking merupakan aplikasi pencatat aktivitas anda dalam hal keuangan dan disediakan chart dalam bentuk donat, pada aplikasi ini saya menggunakan Reactjs dan untuk styling menggunakan styled components.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+##Teknologi yang dipakai
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+- Reactjs
+- Styled Components
+- React Chart JS
+- Netlify
+
+##Untuk Kedapannya
+
+- [ ] Layout Responsive
+- [ ] Penambahan Fitur
+
+Untuk Source Code : [Github](https://github.com/evriyanaindrasaputra/expense-tracker)
+Live : [View Site](https://expense-indrasap.netlify.app/)

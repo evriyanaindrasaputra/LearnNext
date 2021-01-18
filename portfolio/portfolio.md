@@ -1,20 +1,24 @@
 ---
-title: "Web Portfolio"
-subtitle: "Web Portfolio Evriyana Indra Saputra with next js and tailwind css"
-date: "2020-01-08"
+title: "Website Portfolio"
+subtitle: "Website Portfolio Evriyana Indra Saputra with next js and tailwind css"
+date: "2020-01-18"
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+#Website Portfolio Menggunakan Nextjs dan Tailwind css
+Pada project kali ini, saya membuat website yang menggunakan Framework Nextjs dan untuk styling Tailwind css
+pada pembuatan aplikasi ini saya mengaplikasikan dari hasil belajar saya tentang nextjs dasar, seperti penggunaan routing static dan dynamic, Static Site Generator (SSG), beberapa dasar tentang SEO juga yang telah ada di nextjs.
 
-You can use Static Generation for many types of pages, including:
+##Teknologi yang dipakai
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+- Nextjs
+- Tailwind Css
+- Frammer Motion
+- Vercel
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+##Untuk Kedapannya
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+- [ ] Penambahan Layout
+- [ ] Penambahan Fitur Seperti Share to other Social Media
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Untuk Source Code : [Github](https://github.com/evriyanaindrasaputra/LearnNext)
+Live : [View Site](https://eindrasap.vercel.app/)
