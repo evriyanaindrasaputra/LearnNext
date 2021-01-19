@@ -1,6 +1,7 @@
 import Container from "../../components/Container";
 import Head from "next/head";
 import { getAllPortfolioName, getPortfolioData } from "../../lib/portfolios";
+import HeaderContent from "../../components/HeaderContent";
 
 export default function Portolio({ portfolioData }) {
   return (
@@ -8,12 +9,15 @@ export default function Portolio({ portfolioData }) {
       <Head>
         <title>{portfolioData.title}</title>
       </Head>
+      <HeaderContent
+        src={portfolioData.image}
+        title={portfolioData.title}
+        subtitile={portfolioData.subtitle}
+        demo={portfolioData.demo}
+      />
       <article>
-        <div className="my-5">
-          <h1>{portfolioData.title}</h1>
-        </div>
         <div
-          className="text-black dark:text-white text-sm md:text-base"
+          className="text-black dark:text-white text-sm md:text-base mt-2 mb-5"
           dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }}
         />
       </article>

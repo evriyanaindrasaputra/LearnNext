@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Footer() {
   return (
-    <section className="flex justify-between items-center bg-white dark:bg-black max-w-4xl w-full p-4 h-10vh mx-auto my-0">
+    <section className="flex justify-between items-center bg-white dark:bg-black max-w-4xl w-full p-4 h-10vh mx-auto">
       <Link href="/">
         <a className="text-black dark:text-white font-bold text-2xl leading-none">
           ND <br /> RS
