@@ -7,7 +7,7 @@ export default function Blog({ blogData }) {
       <Head>
         <title>{blogData.title}</title>
       </Head>
-      <article>
+      <article className="h-80vh">
         <div className="my-5">
           <h1 className="text-xl md:text-3xl font-bold text-black dark:text-white">
             {blogData.title}

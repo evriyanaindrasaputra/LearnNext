@@ -2,7 +2,7 @@
 title: "Website Portfolio"
 subtitle: "Website Portfolio Evriyana Indra Saputra with next js and tailwind css"
 date: "2020-01-18"
-image: "/images/profile.png"
+image: "/images/Profile.png"
 demo : "https://eindrasap.vercel.app/"
 ---
 
